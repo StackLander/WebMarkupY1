@@ -1,1 +1,76 @@
-/* add all items from grading group 3 and 4. Search for items in group 5 that refer to css f.e. z index */ 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFFFFF;
+    color: #172033;
+    line-height: 1.6;
+}
+
+header {
+    width: 100%;
+    padding: 24px 8%;
+    background-color: #F3F5F8;
+
+    position: relative;
+    z-index: 10;
+
+    border-bottom: 1px solid #DCE1E8;
+}
+
+main {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 32px 8%;
+}
+
+
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #172033;
+}
+
+
+p {
+    font-size: 1rem;
+    margin-top: 12px;
+}
+
+
+section {
+    padding: 24px;
+    margin-top: 24px;
+
+    background-color: #EAF2FF;
+    border: 1px solid #D0DDF0;
+    border-radius: 8px;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+
+
+@media (max-width: 768px) {
+    header {
+        padding: 20px 5%;
+    }
+
+    main {
+        padding: 24px 5%;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    section {
+        padding: 16px;
+    }
+}
