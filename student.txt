@@ -1,0 +1,5 @@
+Student name: Marcus de Rooij
+Student number: 730514
+Student class: HAININF
+GitHub Repository: your github repository URL
+GitHub Pages URL: your github pages URL
