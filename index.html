@@ -1,24 +1,169 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Marcus de Rooij">
+    <meta name="description" content="Ontdek hoe een computer werkt: van processor en geheugen tot programmeertalen en het besturingssysteem.">
+    <meta name="keywords" content="computer, processor, geheugen, compileren, besturingssysteem">
 
-    <title>Softiniser</title>
+    <title>Home | De basis van computers</title>
 
-    <link rel="icon" type="image/png" href="img/ico/favicon.png">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/ico/favicon.png" type="image/svg+xml">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 
 <body>
-    <header>
-        <h1>Softiniser</h1>
-        <img src="img/ico/logo.png" alt="Softiniser Logo">
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="Softiniser — home">
+            <img src="img/ico/logo.png" alt="Softiniser" title="Softiniser" class="brand-logo">
+        </a>
+
+        <nav class="main-nav" aria-label="Hoofdnavigatie">
+            <a class="active" href="index.html">home</a>
+            <a href="cpu.html">verwerking</a>
+            <a href="geheugen.html">opslag</a>
+            <a href="compileren.html">programmeertalen</a>
+            <a href="os.html">besturing</a>
+        </nav>
+
+        <a class="contact-icon" href="contact.html" aria-label="Contact">
+            <img src="img/contact/Contact_Closed.png" alt="Gesloten envelop" title="Gesloten envelop">
+        </a>
     </header>
 
     <main>
-        <h1>Lorem Ipsum</h1>
-        <p>Lorem ipsum dolor sit amet.</p>
+        <section class="hero container">
+            <article class="hero-copy">
+                <h1>Hoe werkt een <span class="text-secondary">computer?</span></h1>
+
+                <p class="lead">
+                    Van regels code tot instructies
+                    die worden uitgevoerd door de processor.
+                    Ontdek stap voor stap hoe hardware en software samenwerken.
+                </p>
+
+                <nav class="button-row" aria-label="Beginnen">
+                    <a class="button" href="cpu.html">
+                        Ontdek hoe het werkt <span>→</span>
+                    </a>
+
+                    <a class="button button-secondary" href="#topics">
+                        Bekijk alles <span>↓</span>
+                    </a>
+                </nav>
+            </article>
+
+            <figure class="hero-visual">
+                <img src="img/home/Home_Main1.png" alt="Illustratie bij de werking van een computer" title="De onderdelen van een computer">
+            </figure>
+        </section>
+
+        <section class="process-strip">
+            <section class="container process-inner">
+                <span>INVOER</span>
+                <b>→</b>
+                <span>VERWERKING</span>
+                <b>→</b>
+                <span>GEHEUGEN</span>
+                <b>→</b>
+                <span>UITVOER</span>
+            </section>
+        </section>
+
+        <section class="container topics" id="topics">
+            <header class="section-heading">
+                <h2>Van hardware tot software</h2>
+
+                <p>Bekijk hoe de onderdelen van een computer samenwerken.</p>
+            </header>
+
+            <section class="topic-grid">
+                <article class="topic-card">
+                    <figure>
+                        <img src="img/home/Home_Tab1.png" alt="Illustratie van een processor" title="Processor">
+                    </figure>
+
+                    <h3>Instructie verwerking</h3>
+
+                    <p>Ontdek hoe de processor instructies uitvoert en berekeningen maakt.</p>
+
+                    <a href="cpu.html">
+                        Bekijk onderwerp <span>→</span>
+                    </a>
+                </article>
+
+                <article class="topic-card">
+                    <figure>
+                        <img src="img/home/Home_Tab2.png" alt="Illustratie van computergeheugen" title="Geheugen">
+                    </figure>
+
+                    <h3>Geheugen &amp; Opslag</h3>
+
+                    <p>Leer het verschil tussen werkgeheugen en permanente opslag.</p>
+
+                    <a href="geheugen.html">
+                        Bekijk onderwerp <span>→</span>
+                    </a>
+                </article>
+
+                <article class="topic-card">
+                    <figure>
+                        <img src="img/home/Home_Tab3.png" alt="Illustratie van programmeercode" title="Programmeertalen">
+                    </figure>
+
+                    <h3>Compileren</h3>
+
+                    <p>Het converteren van een programmeertaal naar een machine taal.</p>
+
+                    <a href="compileren.html">
+                        Bekijk onderwerp <span>→</span>
+                    </a>
+                </article>
+
+                <article class="topic-card">
+                    <figure>
+                        <img src="img/home/Home_Tab4.png" alt="Illustratie van een besturingssysteem" title="Besturingssysteem">
+                    </figure>
+
+                    <h3>Besturingssystemen en architecturen</h3>
+
+                    <p>Hoe operating systems zoals Linux, MacOS en Windows hardware beheren.</p>
+
+                    <a href="os.html">
+                        Bekijk onderwerp <span>→</span>
+                    </a>
+                </article>
+            </section>
+        </section>
     </main>
+
+    <footer class="site-footer">
+        <section class="container footer-inner">
+            <p>
+                Softiniser
+                <span>&copy; 2026 Marcus de Rooij</span>
+                <span class="desktop-only">Desktopweergave</span>
+                <span class="mobile-only">Mobiele weergave</span>
+            </p>
+
+            <p>Home</p>
+
+            <a href="cpu.html">Begin bij verwerking →</a>
+        </section>
+    </footer>
+
+    <section class="cookie-message" aria-label="Cookie-informatie">
+        <p>Deze website gebruikt geen trackingcookies.</p>
+
+        <a href="contact.html">Meer informatie</a>
+    </section>
 </body>
 </html>

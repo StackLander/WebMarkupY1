@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Marcus de Rooij">
+    <meta name="description" content="Ontdek hoe een computer werkt: van processor en geheugen tot programmeertalen en het besturingssysteem.">
+    <meta name="keywords" content="computer, processor, geheugen, compileren, besturingssysteem">
+
+    <title>Besturing — Besturingssysteem | De basis van computers</title>
+
+    <link rel="icon" href="img/ico/favicon.png" type="image/svg+xml">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body>
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="Softiniser — home">
+            <img src="img/ico/logo.png" alt="Softiniser" title="Softiniser" class="brand-logo">
+        </a>
+
+        <nav class="main-nav" aria-label="Hoofdnavigatie">
+            <a class="" href="index.html">home</a>
+            <a class="" href="cpu.html">verwerking</a>
+            <a class="" href="geheugen.html">opslag</a>
+            <a class="" href="compileren.html">programmeertalen</a>
+            <a class="active" href="os.html">besturing</a>
+        </nav>
+
+        <a class="contact-icon" href="contact.html" aria-label="Contact">
+            <img src="img/contact/Contact_Closed.png" alt="Gesloten envelop" title="Gesloten envelop">
+        </a>
+    </header>
+
+    <main class="container article-page">
+        <header class="page-heading">
+            <h1>Het besturingssysteem</h1>
+
+            <p class="lead">Een besturingssysteem (OS) beheert de hardware en vormt de verbinding en implementatie tussen programma's en de computer.</p>
+        </header>
+
+        <section class="os-grid">
+            <aside class="os-visuals">
+                <figure>
+                    <img class="rounded-image" src="img/tab4_OS/OS.png" alt="Illustratie van een besturingssysteem" title="Besturingssysteem">
+
+                    <figcaption>Het OS beheert de computer.</figcaption>
+                </figure>
+
+                <section class="layer-diagram">
+                    <span>Applicaties</span>
+                    <b>↓</b>
+                    <span>Besturingssysteem</span>
+                    <b>↓</b>
+                    <span>Hardware</span>
+                </section>
+
+                <figure>
+                    <img class="code-image" src="img/tab4_OS/CMatrix.png" alt="Groene computercode op een scherm" title="Computercode">
+
+                    <figcaption>Software bestaat uit instructies en gegevens.</figcaption>
+                </figure>
+            </aside>
+
+            <article>
+                <h2>Wat doet een besturingssysteem?</h2>
+
+                <p>
+                    Het besturingssysteem managet de samenwerking tussen de hardware en software.
+                    Het verdeelt onder andere processortijd, beheert het geheugen, verdeelt bestanden en
+                    verzorgt de verbindingen en implementatie met aangesloten apparaten.
+                </p>
+
+                <h2>Een programma starten</h2>
+
+                <p>Wanneer je een programma opent, voert het besturingssysteem verschillende stappen uit:</p>
+
+                <ol class="steps">
+                    <li>
+                        <strong>Bestand zoeken</strong>
+                        <p>Het OS zoekt het programma op de opslag.</p>
+                    </li>
+
+                    <li>
+                        <strong>Geheugen reserveren</strong>
+                        <p>Het programma en de benodigde gegevens worden in RAM geladen.</p>
+                    </li>
+
+                    <li>
+                        <strong>Uitvoering starten</strong>
+                        <p>De processor krijgt instructies om het programma uit te voeren.</p>
+                    </li>
+
+                    <li>
+                        <strong>Bronnen beheren</strong>
+                        <p>Het OS beheert toegang tot bestanden, geheugen en apparaten.</p>
+                    </li>
+                </ol>
+
+                <p>Zo kunnen meerdere programma's naast elkaar werken zonder dat elk programma de controle over de computer heeft.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <section class="container footer-inner">
+            <p>
+                Softiniser
+                <span>&copy; 2026 Marcus de Rooij</span>
+                <span class="desktop-only">Desktopweergave</span>
+                <span class="mobile-only">Mobiele weergave</span>
+            </p>
+
+            <p>04 — Besturing</p>
+
+            <a href="contact.html">Vragen? Neem contact op →</a>
+        </section>
+    </footer>
+
+    <section class="cookie-message" aria-label="Cookie-informatie">
+        <p>Deze website gebruikt geen trackingcookies.</p>
+
+        <a href="contact.html">Meer informatie</a>
+    </section>
+</body>
+</html>

@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<meta name="author" content="Marcus de Rooij">
+	<meta name="description" content="Ontdek hoe programmeertalen, broncode, compilers en interpreters samenwerken om computerprogramma's uit te voeren.">
+	<meta name="keywords" content="computer, programmeertalen, broncode, compiler, interpreter, machinecode">
+
+	<title>Programmeertalen — Compileren | De basis van computers</title>
+
+	<link rel="icon" href="img/ico/favicon.png" type="image/svg+xml">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet" type="text/css">
+
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body>
+
+	<header class="site-header">
+
+		<a class="brand" href="index.html" aria-label="Softiniser — home">
+			<img src="img/ico/logo.png" alt="Softiniser" title="Softiniser" class="brand-logo">
+		</a>
+
+		<nav class="main-nav" aria-label="Hoofdnavigatie">
+			<a class="" href="index.html">home</a>
+			<a class="" href="cpu.html">verwerking</a>
+			<a class="" href="geheugen.html">opslag</a>
+			<a class="active" href="compileren.html">programmeertalen</a>
+			<a class="" href="os.html">besturing</a>
+		</nav>
+
+		<a class="contact-icon" href="contact.html" aria-label="Contact">
+			<img src="img/contact/Contact_Closed.png" alt="Gesloten envelop" title="Gesloten envelop">
+		</a>
+
+	</header>
+
+	<main class="container article-page">
+
+		<header class="page-heading">
+			<h1>Compileren</h1>
+
+			<p class="lead">
+				Programmeertalen maken het onder andere mogelijk om opdrachten
+				op een voor mensen begrijpelijke manier op te schrijven 
+				in plaats van alle instructies handmatig te coderen.
+			</p>
+		</header>
+
+		<section class="compile-grid">
+
+			<article>
+
+				<h2>Wat is broncode?</h2>
+
+				<p>
+					De tekst die een programmeur schrijft noemen we broncode.
+					Broncode wordt vaak geschreven met een erg stricte code grammatica, ook wel syntax genoemd.
+					Een compiler of interpreter converteren deze dan om in een uitvoerbaar programma.
+				</p>
+
+				<figure>
+					<img class="content-image" src="img/tab3_Compileren/C++Exemple.png" alt="Voorbeeld van C++-broncode" title="C++-broncode">
+
+					<figcaption>
+						Een voorbeeld van broncode in C++.
+					</figcaption>
+				</figure>
+
+				<h2>Wat doet een compiler?</h2>
+
+				<p>
+					Een compiler kijkt eerst of de syntax die geschreven is correct is,
+					als er een complicatie is geeft de compiler een foutmelding terug.
+					Als er geen foutmeldingen zijn, dan zet de compiler meestal deze code om naar machinecode
+					of naar een tussenformaat ookwel bytecode genoemd.
+				</p>
+
+				<p>
+					Nadat de compiler klaar is met het omzetten,
+					wordt de linker ingezet om alle onderdelen aan elkaar 
+					samen te voegen tot een uitvoerbaar programma.
+					Als de linker een symbol niet kan vinden wordt 
+					er ook een foutmelding teruggegeven.
+				</p>
+
+				<section class="code-panel">
+
+					<h3>VEREENVOUDIGD VOORBEELD</h3>
+
+					<pre><code>int result = 5 + 3;
+
+// De compiler analyseert de broncode.
+// Vervolgens wordt deze vertaald
+// naar instructies voor de CPU.</code></pre>
+
+				</section>
+
+			</article>
+
+			<aside>
+
+				<figure>
+					<img class="content-image" src="img/tab3_Compileren/JSCodeExemple.png" alt="Voorbeeld van JavaScript-code" title="JavaScript-code">
+
+					<figcaption>
+						Een voorbeeld van JavaScript-broncode.
+					</figcaption>
+				</figure>
+
+				<section class="flow-card">
+
+					<span class="flow-step">BRONCODE</span>
+					<b>↓</b>
+
+					<span class="flow-step">COMPILER / TOOLCHAIN</span>
+					<b>↓</b>
+
+					<span class="flow-step">MACHINECODE</span>
+					<b>↓</b>
+
+					<span class="flow-step">PROCESSOR</span>
+
+				</section>
+
+			</aside>
+
+		</section>
+
+		<section class="info-card wide-info">
+
+			<p class="info-label">WIST JE DAT?</p>
+
+			<p>
+				Maar niet alle talen worden rechtstreeks omgezet naar machinecode.
+				Een voorbeeld hiervan is Java, deze wordt eerst omgezet in bytecode die vervolgens wordt 
+				gehandeld door een virtuele machine.
+			</p>
+
+		</section>
+
+	</main>
+
+	<footer class="site-footer">
+
+		<section class="container footer-inner">
+
+			<p>
+				Softiniser
+				<span>&copy; 2026 Marcus de Rooij</span>
+				<span class="desktop-only">Desktopweergave</span>
+				<span class="mobile-only">Mobiele weergave</span>
+			</p>
+
+			<p>03 — Programmeertalen</p>
+
+			<a href="os.html">Volgende: besturing →</a>
+
+		</section>
+
+	</footer>
+
+	<section class="cookie-message" aria-label="Cookie-informatie">
+
+		<p>Deze website gebruikt geen trackingcookies.</p>
+
+		<a href="contact.html">Meer informatie</a>
+
+	</section>
+
+</body>
+</html>
